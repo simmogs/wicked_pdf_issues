@@ -20,9 +20,8 @@ module WickedPdfIssue326
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-    config.assets.precompile += %w( jquery.js issue_327.css leaflet.js leaflet.css )
-    config.assets.precompile += %w( bootstrap-sprockets.css bootstrap.css )
-    config.assets.paths << "#{Rails.root}/app/assets/stylesheets/bootstrap/"
-    config.assets.paths << "#{Rails.root}/vendor/assets/fonts"
+    # config.assets.paths << "#{Rails.root}/app/assets/stylesheets/font-awesome-4.2.0/css/"
+    # config.assets.paths << "#{Rails.root}/app/assets/stylesheets/bootstrap/"
+    # config.assets.paths << "#{Rails.root}/vendor/assets/fonts"
   end
 end

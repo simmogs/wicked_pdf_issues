@@ -1,0 +1,27 @@
+@import "helpers"
+
+// @import "bootstrap-sprockets"
+@import "bootstrap"
+@import "bootstrap/variables"
+@import "bootstrap/mixins"
+
+@include make-grid(sm)
+@include make-grid(md)
+@include make-grid(lg)
+
+body
+  background-color: white
+
+.page-break
+  display: block
+  clear: both
+  page-break-after: always
+  page-break: always
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12
+  float: initial !important
+
+.centre img
+  display: block
+  margin-left: auto
+  margin-right: auto

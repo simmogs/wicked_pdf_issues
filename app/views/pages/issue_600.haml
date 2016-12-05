@@ -1,0 +1,42 @@
+.container
+  .row
+    .col-xs-6
+      %h1
+        Issue 600
+
+      %p.bg-danger.p-a
+        When viewed in HTML, table has stripes and this paragraph has a red background.
+
+      %p
+        When viewed as a PDF, they've all gone, regardless of setting:
+      %p
+        %code
+          print_media_type: false
+
+      %table.table.table-striped.table-bordered
+        %thead
+          %tr
+            %th
+              Header
+        %tbody
+          %tr
+            %td
+              Line 1
+          %tr
+            %td
+              Line 2
+          %tr
+            %td
+              Line 3
+
+
+      - if request && request.format.html?
+        %p
+          = link_to '/pages/issue_600.pdf', class: 'btn btn-primary' do
+            PDF
+
+    .col-xs-6
+      %h1
+        Columns work ok though
+      %p.bg-success.p-a
+        As does the table outline, fonts etc

@@ -184,4 +184,19 @@ class PagesController < ApplicationController
     end
   end
 
+  def issue_600
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: 'issue_600',
+                layout: 'pdf',
+                template: 'pages/issue_600',
+                show_as_html: params[:debug].present?,
+                page_size:  'A4',
+                viewport_size: '1280x1024',
+                print_media_type: false
+      end
+    end
+  end
+
 end

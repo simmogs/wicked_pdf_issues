@@ -1,13 +1,16 @@
 source 'https://rubygems.org'
-
+ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
+gem 'therubyracer'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: :development
 gem 'pg'
 # Use SCSS for stylesheets
+gem 'bootstrap-sass'
 gem 'sass-rails', '~> 4.0.3'
+gem 'haml-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -17,7 +20,6 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-gem 'twitter-bootstrap-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -40,7 +42,7 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'wicked_pdf', '= 1.0.6'
+gem 'wicked_pdf'#, '= 1.0.6'
 # gem 'wicked_pdf', github: 'mileszs/wicked_pdf'
 # gem 'wicked_pdf', path: '/Users/djones/code/github/mileszs/wicked_pdf'
 # gem 'wkhtmltopdf-binary'
